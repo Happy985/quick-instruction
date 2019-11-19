@@ -1,0 +1,4 @@
+Data['Age'] = Data['Age'].fillna(Data.groupby(['Sex','Pclass'])['Age'].transform('mean'))
+
+In the DataFrame "Data", I have some empty cells in the "Age column"
+I need to fill them by the Age mean not for the hole table but only for rows with the same "Sex" and "Pclass"
