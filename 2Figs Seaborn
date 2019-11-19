@@ -1,0 +1,8 @@
+def plotfig():
+    F=pd.read_csv('Ecommerce Customers')
+    plt.figure(figsize=(8,4), dpi=100)
+    sns.pairplot(F)
+    plt.figure(figsize=(8,4), dpi=100)
+    sns.heatmap(F.corr())
+    
+To show quickly the relationship between parameters in dataFrame and the correlation among them.
